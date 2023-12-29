@@ -1,4 +1,4 @@
-//se crean la variable para seleccionar 
+//se crean la variable para seleccionar aside
 const menuEmail = document.querySelector('.navbar-email');
 const desktopMenu = document.querySelector('.desktop-menu');
 
@@ -6,7 +6,7 @@ const LogoMenuMobile = document.querySelector('.menu')
 const mobileMenu = document.querySelector('.mobile-menu');
 
 const logoCarrito = document.querySelector('.navbar-shopping-cart');
-const productdetail = document.querySelector('.product-detail');
+const aside = document.querySelector('.product-detail');
 
 const cardsContainer = document.querySelector('.cards-container');
 
@@ -36,9 +36,9 @@ function toggleDesktopMenu(){
 }
 
 function toggleMobileMenu(){
-   const isCarritoCompraClosed = productdetail.classList.contains('inactive');
+   const isCarritoCompraClosed = aside.classList.contains('inactive');
    if(!isCarritoCompraClosed){
-    productdetail.classList.add('inactive');
+    aside.classList.add('inactive');
     }
 
     mobileMenu.classList.toggle('inactive')
@@ -51,7 +51,7 @@ function toggleCarritoCompra(){
         mobileMenu.classList.add('inactive');
         }
 
-    productdetail.classList.toggle('inactive');
+    aside.classList.toggle('inactive');
 
 }
 
